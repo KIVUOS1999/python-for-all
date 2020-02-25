@@ -1,0 +1,13 @@
+img.data
+{
+  width:80%;
+}
+
+@media screen and (max-width: 800px)
+{
+  img.data{
+  width:100%;}
+  #con{
+  margin-top: 100px;
+}
+}

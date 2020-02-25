@@ -1,0 +1,25 @@
+.link a
+{
+  color: rgb(242, 44, 22);
+  display:inline;
+}
+
+img
+{
+  width:30%;
+  margin:10px;
+}
+img.ac
+{
+  width:70%;
+}
+
+@media screen and (max-width: 800px){
+img{
+  width:100%;
+}
+img.ac
+{
+  width:80%;
+}
+}

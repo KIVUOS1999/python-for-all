@@ -1,0 +1,196 @@
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+
+.topbar
+{
+  display: none;
+}
+.top-bar1
+{
+  display: none;
+}
+.brand1
+{
+  display: none;
+}
+
+
+body
+{
+  font-size:16px;
+  margin: 0;
+  padding: 0;
+}
+h1
+{
+  color: rgb(242, 44, 22);
+  margin-top:60px;
+  margin-bottom: 20px;
+}
+h2
+{
+  margin-top:40px;
+  margin-bottom: 20px;
+}
+.branding
+{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.sidebar
+{
+  overflow: scroll;
+  background-color: rgb(242, 44, 22);
+  color: white;
+  height: 100%;
+  width:20%;
+  position: fixed;
+  display:block;
+}
+.contain
+{
+  float:right;
+  width:80%;
+
+}
+a{
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  display: block;
+  width: 100%;
+  text-align: center;
+  transition-property: background-color, color;
+transition-duration: .5s;
+transition-timing-function: linear;
+  font-size: 20px;
+}
+.author
+{
+  float: right;
+  width: 20%;
+  filter: blur(70px);
+  transition-property: filter;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.logo
+{
+  margin-top:50px;
+  left: 50%;
+	transform: translate(-50%, 0);
+  position: relative;
+
+}
+.cc{background-color: white;
+   transition-property: background-color, box-shadow;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  box-shadow: none;}
+.sidebar_small
+{
+  display:none;
+  overflow: scroll;
+}
+.author:hover{filter: blur(0px);}
+.cc:hover{background-color: rgb(252, 255, 217);
+box-shadow: 00px 5px 3px 0px rgba(0,0,0,0.2);}
+.logo:hover{filter: blur(2px);transition: filter .5s;}
+.sidebar a:hover{
+  background-color: white;
+  color: rgb(242, 44, 22);
+  box-shadow: 00px 5px 3px 0px rgba(255,255,255,0.2);
+}
+video
+{
+  margin-top:40px;
+}
+pre
+{
+  border-radius: 10px;
+  color:white;
+  background-color: rgb(242, 44, 22,0.8);
+  padding: 2px;
+  margin: 2px;
+  margin: 5px 3px 5px 3px;
+  width: 90%;
+}
+@media screen and (max-width: 800px)
+{
+  body
+  {
+    overflow:scroll;
+  }
+  .topbar
+  {
+    display:block;
+    background-color: rgba(242, 44, 22,.8);
+    position: fixed;
+    height:80px;
+    width:100%;
+    z-index: 5;
+  }
+  .top-bar1
+  {
+    display:block;
+    width:10%;
+    float:left;
+    width:70px;
+    filter:invert(1);
+  }
+  .icon{
+    width:12%;
+  }
+  .brand1
+  {
+    display:block;
+    float:right;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+  }
+  .author
+  {
+    float:none;
+    filter: blur(0px);
+    width:100%;
+    z-index: 0;
+    margin-top: 20px;
+  }
+  .logo
+  {
+    margin-top: 100px;
+    z-index: -1;
+  }
+  .sidebar_small
+  {
+    width:70%;
+    height:100%;
+    position: fixed;
+    background-color: rgba(242, 44, 22, .8);
+    z-index: 4;
+    margin-top: 80px;
+  }
+
+  .contain a{
+    display: inline;
+  }
+  .sidebar
+  {
+    display:none;
+  }
+  .contain
+  {
+    width:100%;
+    float: none;
+  }
+  .sidebar_small a{width: 100%}
+  .sidebar_small a:hover{
+    background-color: white;
+    box-shadow: 00px 5px 3px 0px rgba(255,255,255,0.2);
+    color:rgb(242, 44, 22);
+  }
+
+}

@@ -1,0 +1,24 @@
+table
+{
+  width:100%;
+  border-collapse: collapse;
+  box-shadow: 00px 5px 3px 0px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+th
+{
+  padding: 10px;
+}
+th, td {
+
+  text-align: center;
+}
+th {
+  background-color: rgb(242, 44, 22);
+  color: white;
+}
+@media screen and (max-width: 800px)
+{
+  #con{
+  margin-top: 100px;}
+}

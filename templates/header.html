@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width'>
+    <link rel='stylesheet' type="text/css" href="{% static 'CSS/index.css' %}">
+    <link rel='stylesheet' type="text/css" href="{% static 'CSS/firstprogram.css' %}">
+    <!-- Prism CSS -->
+    <link href="{% static "tinymce/css/prism.css" %}" rel="stylesheet">
+    <link rel='stylesheet' type="text/css" href="https://fonts.googleapis.com/css?family=Poppins">
+
+    <title>PYTHON4ALL</title>
+  </head>
+  <body>
+    <div class="topbar" style = top:0px;>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img class= top-bar1 src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/330px-Hamburger_icon.svg.png" alt="">
+      </a>
+      <div class="brand1">
+        PYforall
+      </div>
+    </div>
+    <div class = "body">
+      <div class = "sidebar" id = "sidebar">
+        <div class="branding">
+            <span class="brand">PY</span>forall
+        </div>
+          {% for tut in tutorials %}
+            <a class = "active" href="{{tut.id}}">{{tut.tutorial_category}}</a>
+          {% endfor %}
+        
+      </div>
+      <div class = "sidebar_small" id="sbs" style =top:0px;>
+        {% for tut in tutorials %}
+          <a class = "active" href="{{tut.id}}">{{tut.tutorial_category}}</a>
+        {% endfor %}
+      </div>
+      <div class = "contain" id ="con">
+        {% block content %}
+        {% endblock %}
+    
+    </div>
+    <div>
+
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("sbs");
+        if(x.style.display == "block"){
+          x.style.display = "none";
+        }else{
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
